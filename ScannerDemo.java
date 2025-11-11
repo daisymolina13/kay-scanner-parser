@@ -1,8 +1,6 @@
 /**
  * ScannerDemo.java
  * Demonstration of the KAY scanner
- * 
- * Modified by: Daisy Molina
  */
 
 public class ScannerDemo {
@@ -29,6 +27,6 @@ public class ScannerDemo {
         }
 
         //Step 4: finished scanning
-        System.out.println("\n✅ Scanner finished successfully! " + (counter - 1) + " tokens processed.");
+        System.out.println("\n Scanner finished successfully! " + (counter - 1) + " tokens processed.");
     }
 }

@@ -4,10 +4,6 @@ import java.util.*;
 /**
  * TokenStream.java
  * KAY Language Scanner for CS361
- * 
- * Partner A: Daisy Molina
- * Professor: Carmine Scharff
- *
  * Performs lexical analysis for the KAY language.
  */
 public class TokenStream {
@@ -26,7 +22,7 @@ public class TokenStream {
         '(', ')', '{', '}', ';', ','
     ));
 
-    // ✅ Use the filename passed in (no hardcoded path)
+    // Use the filename passed in (no hardcoded path)
     public TokenStream(String filename) {
         try {
             reader = new BufferedReader(new FileReader(filename));

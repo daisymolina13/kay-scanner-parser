@@ -1,9 +1,6 @@
 /**
  * ConcreteSyntax.java
  * Recursive-descent parser for the KAY programming language
- * 
- * Partner A: Daisy Molina
- * Professor: Carmine Scharff
  */
 
 public class ConcreteSyntax {
