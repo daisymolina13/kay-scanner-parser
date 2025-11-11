@@ -1,0 +1,63 @@
+// keywords
+bool
+else
+if
+integer
+main
+while
+
+// separators
+(
+)
+{
+}
+;
+,
+
+// operators
+||
+!
+&&
+!=
+==
+>=
+<=
+<
+>
+/
+*
+-
++
+:=
+
+// identifiers
+a
+aa
+x
+counter
+a3
+do
+void
+true
+false
+X3
+TRUE
+
+// literals
+True
+False
+0
+1
+2
+10
+256
+85403345
+
+// lexical errors
+=
+3aaa2!=44444
+@
+&
+|
+1!==3
+

@@ -15,6 +15,19 @@ public class Program {
 	public Declarations decpart;
 	public Block body;
 
+	//prevents NullPointerExceptions
+	public Program(Declarations d, Block b) {
+		if (d == null) d = new Declarations();
+        if (b == null) b = new Block();
+        this.decpart = d;
+        this.body = b;
+	}
+
+	//default constructor
+	public Program() {
+		this(new Declarations(), new Block());
+    }
+
 	public String display() {
 		int level = 0;
 		Indenter indent = new Indenter(level);

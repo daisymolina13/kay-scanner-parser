@@ -1,16 +1,36 @@
+/**
+ * ParserDemo.java
+ * KAY Parser Driver
+ * 
+ * Partner A: Daisy Molina
+ * Professor: Carmine Scharff
+ */
+
 public class ParserDemo {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
+        // ✅ Require a filename argument
+        if (args.length < 1) {
+            System.out.println("Usage: java ParserDemo <filename.kay>");
+            return;
+        }
 
-		// TO COMPLETE
-		// Change the path!
-		TokenStream tStream = new TokenStream("C:\\\\Users\\\\cscharff\\\\eclipse-workspace\\\\ScannerSolution\\\\src\\\\prog1.jay");
+        String filename = args[0];
 
-		ConcreteSyntax cSyntax = new ConcreteSyntax(tStream);
-		Program p = cSyntax.program();
-		System.out.println(p.display());
-		System.out.println("test");
+        try {
+            // ✅ Use the filename you pass in — no hardcoded paths!
+            TokenStream ts = new TokenStream(filename);
+            ConcreteSyntax parser = new ConcreteSyntax(ts);
 
-	}
+            // ✅ Parse the program and display the syntax tree
+            Program program = parser.program();
+            System.out.println(program.display());
 
+            System.out.println("\n✅ Parsing completed successfully for file: " + filename);
+
+        } catch (RuntimeException e) {
+            System.out.println(e.getMessage());
+        }
+    }
 }
+
