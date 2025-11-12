@@ -1,5 +1,4 @@
 /**
- * Daisy Molina and Uday Brathwaite
  * ScannerDemo.java
  * Demonstration of the KAY scanner
  */

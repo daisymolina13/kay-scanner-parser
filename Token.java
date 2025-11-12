@@ -1,5 +1,5 @@
 public class Token {
-	// Daisy Molina and Uday Brathwaite
+	// Uday Brathwaite and Daisy Molina
 	// Token type Identifier, Keyword, Literal, Separator, Operator, or Other
 	private String type;
 	// Token value

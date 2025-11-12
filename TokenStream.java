@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 /**
- * Daisy Molina and Uday Brathwaite
+ * Uday Brathwaite and Daisy Molina
  * TokenStream.java
  * KAY Language Scanner for CS361
  * Performs lexical analysis for the KAY language.
