@@ -82,7 +82,7 @@ public class ConcreteSyntax {
         } else if (token.getValue().equals("if")) {
             return ifStatement();
         } else if (token.getValue().equals("while")) {
-            return whileStatement();
+            return whileStatement();    
         } else {
             throw new RuntimeException("Syntax error - Unexpected token in statement: "
                     + token.getType() + " = " + token.getValue());
@@ -105,8 +105,8 @@ public class ConcreteSyntax {
     }
 
     /** IF → if ( EXPR ) { STATS } [ else { STATS } ] */
-    private Conditional ifStatement() {
-        match("if");
+    private Conditional ifStatement() { // fix this function with the matches
+        match("if"); 
         match("(");
         Expression cond = expression();
         match(")");
